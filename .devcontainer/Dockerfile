@@ -22,6 +22,7 @@ RUN apt-get update \
 # python-packages
 RUN pip install \
         numpy \
+        pytest \
         flake8
 
 USER ${USER_NAME}
