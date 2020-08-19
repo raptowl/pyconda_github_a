@@ -1,5 +1,8 @@
 # python cache
 __pycache__
 
+# python pytest cache
+.pytest_cache
+
 # remote containers setting of vscode
 .devcontainer/devcontainer.json

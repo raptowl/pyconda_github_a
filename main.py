@@ -1,5 +1,6 @@
 import argparse
-import mymodule.mod1
+
+from mymodule.mod1 import NormalMyAdder, ListMyAdder, NumpyMyAdder
 
 
 if __name__ == '__main__':
@@ -12,9 +13,9 @@ if __name__ == '__main__':
 
     a = args.num_a
     b = args.num_b
-    adder1 = mymodule.mod1.NormalMyAdder(a, b)
-    adder2 = mymodule.mod1.ListMyAdder(a, b)
-    adder3 = mymodule.mod1.NumpyMyAdder(a, b)
+    adder1 = NormalMyAdder(a, b)
+    adder2 = ListMyAdder(a, b)
+    adder3 = NumpyMyAdder(a, b)
     print(f'{adder1.add()}')
     print(f'{type(adder1.add())}')
     print(f'{adder2.add()}')
